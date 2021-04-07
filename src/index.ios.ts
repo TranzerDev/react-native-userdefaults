@@ -1,9 +1,9 @@
 import { NativeModules } from 'react-native';
 
-type UserdefaultsType = {
+type RNUserdefaultsType = {
   multiply(a: number, b: number): Promise<number>;
 };
 
-const { Userdefaults } = NativeModules;
+const { RNUserdefaults } = NativeModules;
 
-export default Userdefaults as UserdefaultsType;
+export default RNUserdefaults as RNUserdefaultsType;
