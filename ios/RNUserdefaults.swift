@@ -1,5 +1,5 @@
-@objc(Userdefaults)
-class Userdefaults: NSObject {
+@objc(RNUserdefaults)
+class RNUserdefaults: NSObject {
 
     @objc(multiply:withB:withResolver:withRejecter:)
     func multiply(a: Float, b: Float, resolve:RCTPromiseResolveBlock,reject:RCTPromiseRejectBlock) -> Void {
