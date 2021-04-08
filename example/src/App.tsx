@@ -7,7 +7,7 @@ export default function App() {
   const [result, setResult] = React.useState<number | undefined>();
 
   React.useEffect(() => {
-    Userdefaults.multiply(3, 7).then(setResult);
+    Userdefaults.setWithSuite("value yes", "key no", "suite oh yeah")
   }, []);
 
   return (

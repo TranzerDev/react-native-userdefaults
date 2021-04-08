@@ -1,9 +1,12 @@
-import { NativeModules } from 'react-native';
+import type { RNUserdefaultsType } from './types';
 
-type RNUserdefaultsType = {
-  multiply(a: number, b: number): Promise<number>;
-};
+const RNUserdefaults: RNUserdefaultsType = {
+  set: (_value, _key) => {
+    throw 'not implemented'
+  },
+  setWithSuite: (_value, _key, _suite) => {
+    throw 'not implemented'
+  }
+}
 
-const { RNUserdefaults } = NativeModules;
-
-export default RNUserdefaults as RNUserdefaultsType;
+export default RNUserdefaults;
