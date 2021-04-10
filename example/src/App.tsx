@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { StyleSheet, View, Button } from 'react-native';
 
-import RNUserdefaults from 'react-native-userdefaults';
+import RNUserdefaults from '@kamaal111/react-native-user-defaults';
 
 export default function App() {
   return (
