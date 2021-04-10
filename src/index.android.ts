@@ -19,4 +19,11 @@ const RNUserdefaults: RNUserdefaultsType = {
   removeFromSuite: (_key, _suite) => ultimateThrower,
 };
 
+export const { set } = RNUserdefaults;
+export const { setFromSuite } = RNUserdefaults;
+export const { get } = RNUserdefaults;
+export const { getFromSuite } = RNUserdefaults;
+export const { remove } = RNUserdefaults;
+export const { removeFromSuite } = RNUserdefaults;
+
 export default RNUserdefaults;

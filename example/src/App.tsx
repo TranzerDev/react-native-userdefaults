@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { StyleSheet, View, Button } from 'react-native';
-// @ts-ignore
+
 import RNUserdefaults from 'react-native-userdefaults';
 
 export default function App() {
@@ -18,7 +18,10 @@ export default function App() {
         onPress={async () => {
           try {
             const value = await RNUserdefaults.get('save.new.defaults');
-            console.log(`value`, value);
+            if (value != undefined) {
+              const { super: keyer } = JSON.parse(value) as { super: string };
+              console.log(`super`, keyer);
+            }
           } catch (error) {
             console.warn(`error`, error);
           }

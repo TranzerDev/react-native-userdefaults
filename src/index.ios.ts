@@ -23,4 +23,11 @@ const RNUserdefaults: RNUserdefaultsType = {
   },
 };
 
-export default RNUserdefaults as RNUserdefaultsType;
+export const { set } = RNUserdefaults;
+export const { setFromSuite } = RNUserdefaults;
+export const { get } = RNUserdefaults;
+export const { getFromSuite } = RNUserdefaults;
+export const { remove } = RNUserdefaults;
+export const { removeFromSuite } = RNUserdefaults;
+
+export default RNUserdefaults;
