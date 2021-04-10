@@ -36,7 +36,10 @@
     "ios",
     "android"
   ],
-  "repository": "https://github.com/kamaal111/react-native-userdefaults",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kamaal111/react-native-userdefaults.git"
+  },
   "author": "Kamaal111 <kamaal.f1@gmail.com> (https://github.com/kamaal111)",
   "license": "MIT",
   "bugs": {
