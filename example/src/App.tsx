@@ -17,11 +17,17 @@ export default function App() {
         title={'Get value'}
         onPress={async () => {
           try {
-            const value = await RNUserdefaults.get('save.unknown.defaults');
+            const value = await RNUserdefaults.get('save.new.defaults');
             console.log(`value`, value);
           } catch (error) {
             console.warn(`error`, error);
           }
+        }}
+      />
+      <Button
+        title={'Remove value'}
+        onPress={() => {
+          RNUserdefaults.remove('save.new.defaults');
         }}
       />
     </View>

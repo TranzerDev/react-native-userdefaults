@@ -6,15 +6,17 @@ const ultimateThrower = (): never => {
 
 const RNUserdefaults: RNUserdefaultsType = {
   set: (_value, _key) => ultimateThrower,
-  setWithSuite: (_value, _key, _suite) => ultimateThrower,
+  setFromSuite: (_value, _key, _suite) => ultimateThrower,
   get: async (_key) => {
     ultimateThrower();
     return undefined;
   },
-  getWithSuite: async (_key, _suite) => {
+  getFromSuite: async (_key, _suite) => {
     ultimateThrower();
     return undefined;
   },
+  remove: (_key) => ultimateThrower,
+  removeFromSuite: (_key, _suite) => ultimateThrower,
 };
 
 export default RNUserdefaults;

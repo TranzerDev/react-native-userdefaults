@@ -31,6 +31,12 @@ public class RNUserdefaults: NSObject {
     }
 
     @objc
+    public func remove(_ key: String, inSuite suite: String) {
+        let defaults = determineUserDefaults(inSuite: suite)
+        defaults.removeObject(forKey: key)
+    }
+
+    @objc
     public func set(_ value: String, forKey key: String) {
         set(value, forKey: key, inSuite: standardUserDefaultsKey)
     }
@@ -38,6 +44,11 @@ public class RNUserdefaults: NSObject {
     @objc
     public func get(_ key: String, resolve: RCTPromiseResolveBlock, reject: RCTPromiseRejectBlock) {
         get(key, inSuite: standardUserDefaultsKey, resolve: resolve, reject: reject)
+    }
+
+    @objc
+    public func remove(_ key: String) {
+        remove(key, inSuite: standardUserDefaultsKey)
     }
 
     private func determineUserDefaults(inSuite suite: String) -> UserDefaults {

@@ -5,6 +5,9 @@
 RCT_EXTERN_METHOD(set: (NSString *)value forKey: (NSString *)key inSuite: (NSString *)suite)
 RCT_EXTERN_METHOD(set: (NSString *)value forKey: (NSString *)key)
 
+RCT_EXTERN_METHOD(remove: (NSString *)key inSuite: (NSString *)suite)
+RCT_EXTERN_METHOD(remove: (NSString *)key)
+
 RCT_EXTERN_METHOD(get: (NSString *)key
                   inSuite: (NSString *)suite
                   resolve: (RCTPromiseResolveBlock)resolve
