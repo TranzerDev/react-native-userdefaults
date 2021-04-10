@@ -1,18 +1,29 @@
 import * as React from 'react';
-
-import { StyleSheet, View, Text } from 'react-native';
-import Userdefaults from 'react-native-userdefaults';
+import { StyleSheet, View, Button } from 'react-native';
+// @ts-ignore
+import RNUserdefaults from 'react-native-userdefaults';
 
 export default function App() {
-  const [result, setResult] = React.useState<number | undefined>();
-
-  React.useEffect(() => {
-    Userdefaults.setWithSuite("value yes", "key no", "suite oh yeah")
-  }, []);
-
   return (
     <View style={styles.container}>
-      <Text>Result: {result}</Text>
+      <Button
+        title={'Set value'}
+        onPress={() => {
+          const value = JSON.stringify({ super: 'object3' });
+          RNUserdefaults.set(value, 'save.new.defaults');
+        }}
+      />
+      <Button
+        title={'Get value'}
+        onPress={async () => {
+          try {
+            const value = await RNUserdefaults.get('save.unknown.defaults');
+            console.log(`value`, value);
+          } catch (error) {
+            console.warn(`error`, error);
+          }
+        }}
+      />
     </View>
   );
 }
