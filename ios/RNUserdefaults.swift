@@ -18,20 +18,20 @@ public class RNUserdefaults: NSObject {
     }
 
     @objc
-    public func set(_ value: String, forKey key: String, inSuite suite: String) {
+    public func setFromSuite(_ value: String, forKey key: String, inSuite suite: String) {
         let defaults = determineUserDefaults(inSuite: suite)
         defaults.set(value, forKey: key)
     }
 
     @objc
-    public func get(_ key: String, inSuite suite: String, resolve: RCTPromiseResolveBlock, reject: RCTPromiseRejectBlock) {
+    public func getFromSuite(_ key: String, inSuite suite: String, resolve: RCTPromiseResolveBlock, reject: RCTPromiseRejectBlock) {
         let defaults = determineUserDefaults(inSuite: suite)
         let value = defaults.object(forKey: key) as? String
         resolve(value)
     }
 
     @objc
-    public func remove(_ key: String, inSuite suite: String) {
+    public func removeFromSuite(_ key: String, inSuite suite: String) {
         let defaults = determineUserDefaults(inSuite: suite)
         defaults.removeObject(forKey: key)
     }

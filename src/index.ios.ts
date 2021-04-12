@@ -7,19 +7,19 @@ const RNUserdefaults: RNUserdefaultsType = {
     NativeModules.RNUserdefaults.set(value, key);
   },
   setFromSuite: (value, key, suite) => {
-    NativeModules.RNUserdefaults.set(value, key, suite);
+    NativeModules.RNUserdefaults.setFromSuite(value, key, suite);
   },
   get: (key) => {
     return NativeModules.RNUserdefaults.get(key);
   },
   getFromSuite: (key, suite) => {
-    return NativeModules.RNUserdefaults.get(key, suite);
+    return NativeModules.RNUserdefaults.getFromSuite(key, suite);
   },
   remove: (key) => {
     NativeModules.RNUserdefaults.remove(key);
   },
   removeFromSuite: (key, suite) => {
-    NativeModules.RNUserdefaults.remove(key, suite);
+    NativeModules.RNUserdefaults.removeFromSuite(key, suite);
   },
 };
 
