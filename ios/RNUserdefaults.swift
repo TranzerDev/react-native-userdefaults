@@ -47,8 +47,8 @@ public class RNUserdefaults: NSObject {
     }
 
     @objc
-    public func removeFromSuite(_ key: String) {
-        remove(key, inSuite: standardUserDefaultsKey)
+    public func remove(_ key: String) {
+        removeFromSuite(key, inSuite: standardUserDefaultsKey)
     }
 
     private func determineUserDefaults(inSuite suite: String) -> UserDefaults {
