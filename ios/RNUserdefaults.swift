@@ -38,16 +38,16 @@ public class RNUserdefaults: NSObject {
 
     @objc
     public func set(_ value: String, forKey key: String) {
-        set(value, forKey: key, inSuite: standardUserDefaultsKey)
+        setFromSuite(value, forKey: key, inSuite: standardUserDefaultsKey)
     }
 
     @objc
     public func get(_ key: String, resolve: RCTPromiseResolveBlock, reject: RCTPromiseRejectBlock) {
-        get(key, inSuite: standardUserDefaultsKey, resolve: resolve, reject: reject)
+        getFromSuite(key, inSuite: standardUserDefaultsKey, resolve: resolve, reject: reject)
     }
 
     @objc
-    public func remove(_ key: String) {
+    public func removeFromSuite(_ key: String) {
         remove(key, inSuite: standardUserDefaultsKey)
     }
 
