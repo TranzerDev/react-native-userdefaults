@@ -1,6 +1,6 @@
 {
   "name": "@tranzerdev/react-native-user-defaults",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "An wrapper for iOS UserDefaults",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
