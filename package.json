@@ -1,6 +1,6 @@
 {
-  "name": "@kamaal111/react-native-user-defaults",
-  "version": "0.1.4",
+  "name": "@tranzerdev/react-native-user-defaults",
+  "version": "0.1.6",
   "description": "An wrapper for iOS UserDefaults",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -38,14 +38,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kamaal111/react-native-userdefaults.git"
+    "url": "git+https://github.com/tranzerdev/react-native-userdefaults.git"
   },
   "author": "Kamaal111 <kamaal.f1@gmail.com> (https://github.com/kamaal111)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kamaal111/react-native-userdefaults/issues"
+    "url": "https://github.com/tranzerdev/react-native-userdefaults/issues"
   },
-  "homepage": "https://github.com/kamaal111/react-native-userdefaults#readme",
+  "homepage": "https://github.com/tranzerdev/react-native-userdefaults#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },

@@ -1,6 +1,6 @@
 # react-native-user-defaults
 
-An wrapper voor iOS UserDefaults
+An wrapper for iOS UserDefaults
 
 - [Installation](#Installation)
 - [Usage](#Usage)
@@ -13,13 +13,13 @@ An wrapper voor iOS UserDefaults
 Using either Yarn:
 
 ```bash
-yarn add @kamaal111/react-native-user-defaults
+yarn add @tranzerdev/react-native-user-defaults
 ```
 
 Or npm:
 
 ```bash
-npm install @kamaal111/react-native-user-defaults
+npm install @tranzerdev/react-native-user-defaults
 ```
 
 ### Link
@@ -39,13 +39,13 @@ $ cd ios && pod install
 The following steps are only necessary if you are working with a version of React Native lower than 0.60:
 
 ```bash
-$ react-native link @kamaal111/react-native-user-defaults
+$ react-native link @tranzerdev/react-native-user-defaults
 ```
 
 #### iOS
 
 1. In Xcode in the project navigator, right click `Libraries` > `Add Files to [your project's name]`
-2. Go to `node_modules` > `@kamaal111/react-native-user-defaults` and add `RNUserdefaults.xcodeproj`
+2. Go to `node_modules` > `@tranzerdev/react-native-user-defaults` and add `RNUserdefaults.xcodeproj`
 3. In XCode, in the project navigator, select your project. Add `libRNUserdefaults.a` to your project's `BuildPhases` > `Link Binary With Libraries`
 4. Run your project (`cmd+R`)
 
@@ -55,10 +55,10 @@ Not needed because this packages is not implemented to be used for Android (yet!
 
 ## Usage
 
-Import RNUserdefaults from `@kamaal111/react-native-user-defaults`:
+Import RNUserdefaults from `@tranzerdev/react-native-user-defaults`:
 
 ```javascript
-import RNUserdefaults from '@kamaal111/react-native-user-defaults';
+import RNUserdefaults from '@tranzerdev/react-native-user-defaults';
 ```
 
 ### Set value in user defaults
