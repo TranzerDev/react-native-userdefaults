@@ -1,5 +1,5 @@
 {
-  "name": "@kamaal111/react-native-user-defaults",
+  "name": "@tranzerdev/react-native-user-defaults",
   "version": "0.1.4",
   "description": "An wrapper for iOS UserDefaults",
   "main": "lib/commonjs/index",
