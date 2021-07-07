@@ -1,6 +1,6 @@
 # react-native-user-defaults
 
-An wrapper voor iOS UserDefaults
+An wrapper for iOS UserDefaults
 
 - [Installation](#Installation)
 - [Usage](#Usage)
