@@ -72,7 +72,7 @@ const key = 'key-for-value';
 // To set the value in standard UserDefaults
 RNUserdefaults.set(value, key);
 // The UserDefaults suite indetifier
-const suite = 'group.example.app';
+const suite = 'group.old-example.app';
 // To set the value in a self defined UserDefaults suite
 RNUserdefaults.setFromSuite(value, key, suite);
 ```
@@ -85,7 +85,7 @@ const key = 'key-for-value';
 // To get the value in standard UserDefaults
 const value = await RNUserdefaults.get(key);
 // The UserDefaults suite indetifier
-const suite = 'group.example.app';
+const suite = 'group.old-example.app';
 // To get the value in a self defined UserDefaults suite
 const value = await RNUserdefaults.getFromSuite(key, suite);
 ```
@@ -98,7 +98,7 @@ const key = 'key-for-value';
 // To remove the value in standard UserDefaults
 RNUserdefaults.remove(key);
 // The UserDefaults suite indetifier
-const suite = 'group.example.app';
+const suite = 'group.old-example.app';
 // To remove the value in a self defined UserDefaults suite
 RNUserdefaults.removeFromSuite(key, suite);
 ```

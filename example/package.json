@@ -1,5 +1,5 @@
 {
-  "name": "react-native-userdefaults-example",
+  "name": "rn-userdefaults-example",
   "description": "Example app for react-native-userdefaults",
   "version": "0.0.1",
   "private": true,
@@ -9,14 +9,15 @@
     "start": "react-native start"
   },
   "dependencies": {
-    "@tranzerdev/react-native-user-defaults": "^0.1.5",
-    "react": "16.13.1",
-    "react-native": "0.63.4"
+    "@tranzerdev/react-native-user-defaults": "file:../",
+    "react": "17.0.2",
+    "react-native": "0.66.4"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.10",
+    "@types/react-native": "^0.66.15",
+    "@babel/core": "^7.12.9",
     "@babel/runtime": "^7.12.5",
     "babel-plugin-module-resolver": "^4.0.0",
-    "metro-react-native-babel-preset": "^0.64.0"
+    "metro-react-native-babel-preset": "^0.66.2"
   }
 }

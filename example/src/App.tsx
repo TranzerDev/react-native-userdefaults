@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { StyleSheet, View, Button } from 'react-native';
+import {StyleSheet, View, Button} from 'react-native';
 
 // @ts-ignore
 import RNUserdefaults from '@tranzerdev/react-native-user-defaults';
@@ -10,7 +10,7 @@ export default function App() {
       <Button
         title={'Set value'}
         onPress={() => {
-          const value = JSON.stringify({ super: 'object3' });
+          const value = JSON.stringify({super: 'object3'});
           RNUserdefaults.set(value, 'save.new.defaults');
         }}
       />
@@ -20,7 +20,7 @@ export default function App() {
           try {
             const value = await RNUserdefaults.get('save.new.defaults');
             if (value != undefined) {
-              const { super: keyer } = JSON.parse(value) as { super: string };
+              const {super: keyer} = JSON.parse(value) as {super: string};
               console.log(`super`, keyer);
             }
           } catch (error) {
