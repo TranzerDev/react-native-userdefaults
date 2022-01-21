@@ -914,10 +914,8 @@
   resolved "https://registry.yarnpkg.com/@sideway/pinpoint/-/pinpoint-2.0.0.tgz#cff8ffadc372ad29fd3f78277aeb29e632cc70df"
   integrity sha512-RNiOoTPkptFtSVzQevY/yWtZwf/RxyVnPy/OcA9HBM3MlGDnBEYL5B41H0MTn0Uec8Hi+2qUtTfG2WWZBmMejQ==
 
-"@tranzerdev/react-native-user-defaults@^0.1.5":
-  version "0.1.6"
-  resolved "https://registry.yarnpkg.com/@tranzerdev/react-native-user-defaults/-/react-native-user-defaults-0.1.6.tgz#a17fce883bb5f034d9d46008028d52fdd0644ca9"
-  integrity sha512-jR4P19etAWP9caI2u4yHcMFand35jQRS1OZBn5JSLcSJTA4CAAXMEOnvRMaj407UnwXzpF+hG1mNuizOB1f18w==
+"@tranzerdev/react-native-user-defaults@file:..":
+  version "0.1.7"
 
 "@types/graceful-fs@^4.1.2":
   version "4.1.5"

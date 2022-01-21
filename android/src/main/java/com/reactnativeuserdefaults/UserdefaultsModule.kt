@@ -5,6 +5,7 @@ import android.content.SharedPreferences
 import com.facebook.react.bridge.Promise
 import com.facebook.react.bridge.ReactApplicationContext
 import com.facebook.react.bridge.ReactContextBaseJavaModule
+import com.facebook.react.bridge.ReactMethod
 
 class UserdefaultsModule(reactContext: ReactApplicationContext) :
   ReactContextBaseJavaModule(reactContext) {
@@ -14,18 +15,21 @@ class UserdefaultsModule(reactContext: ReactApplicationContext) :
     return "Userdefaults"
   }
 
-  fun set(key: String, value: String) {
+  @ReactMethod
+  fun set(value: String, key: String) {
     with (sharedPref!!.edit()) {
       putString(key, value)
       apply()
     }
   }
 
+  @ReactMethod
   fun get(key: String, promise: Promise) {
     val sharedPrefValue = sharedPref!!.getString(key, null)
     promise.resolve(sharedPrefValue)
   }
 
+  @ReactMethod
   fun remove(key: String) {
     with (sharedPref!!.edit()) {
       remove(key)

@@ -1,21 +1,25 @@
 import type { RNUserdefaultsType } from './types';
+import { NativeModules } from 'react-native';
 
 const ultimateThrower = (): never => {
   throw 'not implemented';
 };
 
 const RNUserdefaults: RNUserdefaultsType = {
-  set: (_value, _key) => ultimateThrower,
+  set: (_value, _key) => {
+    NativeModules.Userdefaults.set(_value, _key);
+  },
   setFromSuite: (_value, _key, _suite) => ultimateThrower,
-  get: async (_key) => {
-    ultimateThrower();
-    return undefined;
+  get: (key) => {
+    return NativeModules.Userdefaults.get(key);
   },
   getFromSuite: async (_key, _suite) => {
     ultimateThrower();
     return undefined;
   },
-  remove: (_key) => ultimateThrower,
+  remove: (key) => {
+    return NativeModules.Userdefaults.remove(key);
+  },
   removeFromSuite: (_key, _suite) => ultimateThrower,
 };
 
