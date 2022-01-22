@@ -51,7 +51,7 @@ $ react-native link @tranzerdev/react-native-user-defaults
 
 #### Android
 
-Not needed because this packages is not implemented to be used for Android (yet!)
+No configuration needed
 
 ## Usage
 
@@ -73,7 +73,7 @@ const key = 'key-for-value';
 RNUserdefaults.set(value, key);
 // The UserDefaults suite indetifier
 const suite = 'group.example.app';
-// To set the value in a self defined UserDefaults suite
+// iOS only: To set the value in a self defined UserDefaults suite.
 RNUserdefaults.setFromSuite(value, key, suite);
 ```
 
@@ -86,7 +86,7 @@ const key = 'key-for-value';
 const value = await RNUserdefaults.get(key);
 // The UserDefaults suite indetifier
 const suite = 'group.example.app';
-// To get the value in a self defined UserDefaults suite
+//iOS only: To get the value in a self defined UserDefaults suite
 const value = await RNUserdefaults.getFromSuite(key, suite);
 ```
 
@@ -99,6 +99,6 @@ const key = 'key-for-value';
 RNUserdefaults.remove(key);
 // The UserDefaults suite indetifier
 const suite = 'group.example.app';
-// To remove the value in a self defined UserDefaults suite
+// iOS only: To remove the value in a self defined UserDefaults suite
 RNUserdefaults.removeFromSuite(key, suite);
 ```
