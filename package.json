@@ -1,6 +1,6 @@
 {
   "name": "@tranzerdev/react-native-user-defaults",
-  "version": "0.1.6",
+  "version": "0.2.0",
   "description": "An wrapper for iOS UserDefaults",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -40,7 +40,7 @@
     "type": "git",
     "url": "git+https://github.com/tranzerdev/react-native-userdefaults.git"
   },
-  "author": "Kamaal111 <kamaal.f1@gmail.com> (https://github.com/kamaal111)",
+  "author": "Tranzer B.V.",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/tranzerdev/react-native-userdefaults/issues"
