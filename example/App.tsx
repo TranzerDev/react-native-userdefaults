@@ -10,6 +10,7 @@
 
 import React, {Fragment} from 'react';
 import {
+  Alert,
   ImageBackground,
   SafeAreaView,
   ScrollView,
@@ -158,22 +159,23 @@ const App = () => {
   const setValue = () => {
     const value = JSON.stringify({super: 'object3'});
     RNUserdefaults.set(value, 'save.new.defaults');
+    Alert.alert('Set', `setValue succeeded value with: ${value}`);
   };
 
   const getValue = async () => {
+    let value;
     try {
-      const value = await RNUserdefaults.get('save.new.defaults');
-      if (value !== undefined) {
-        const {super: keyer} = JSON.parse(value) as {super: string};
-        console.log(`super`, keyer);
-      }
+      value = await RNUserdefaults.get('save.new.defaults');
     } catch (error) {
       console.warn(`error`, error);
     }
+    Alert.alert('Get', `getValue succeeded value is: ${value}`);
+    return JSON.parse(value) as {super: string};
   };
 
   const removeValue = () => {
     RNUserdefaults.remove('save.new.defaults');
+    Alert.alert('Remove', `removeValue succeeded value`);
   };
 
   return (
