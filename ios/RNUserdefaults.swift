@@ -26,7 +26,7 @@ public class RNUserdefaults: NSObject {
     @objc
     public func getFromSuite(_ key: String, inSuite suite: String, resolve: RCTPromiseResolveBlock, reject: RCTPromiseRejectBlock) {
         let defaults = determineUserDefaults(inSuite: suite)
-        let value = defaults.object(forKey: key) as? String
+        let value = defaults.object(forKey: key)
         resolve(value)
     }
 
